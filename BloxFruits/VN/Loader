@@ -2539,7 +2539,7 @@ spawn(function()
     require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Đang Tải...<Color=/>"):Display()
     wait(.36)
 end)
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet("https://binbinvogamingvnclone.github.io/Orion/BinbinvoGamingLib",true))()
 OrionLib:MakeNotification({
     Name = "BinbinvoGaming Hub",
     Content = "Vui lòng đợi tải tập lệnh..., Không bật bất kỳ chức năng nào",

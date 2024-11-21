@@ -2539,7 +2539,7 @@ spawn(function()
     require(game.ReplicatedStorage.Notification).new("<Color=Blue>Loading<Color=/>"):Display()
 end)
 wait(10)
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet("https://binbinvogamingvnclone.github.io/Orion/BinbinvoGamingLib",true))()
 OrionLib:MakeNotification({
     Name = "BinbinvoGaming Hub",
     Content = "Please Wait loading script...,Do not enable any function",

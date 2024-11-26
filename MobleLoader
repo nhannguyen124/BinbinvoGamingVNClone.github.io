@@ -24,9 +24,9 @@ elseif PlaceId == 6284583030 then
 
     loadstring(game:HttpGet(('https://BinbinvoGaming.github.io/Evade'),true))()
 
-elseif PlaceId == 9872472334 then
+elseif PlaceId == 16732694052 then
 
-    game.Players.LocalPlayer:Kick('Not Support this map.')
+    loadstring(game:HttpGet("https://BinbinvoGamingVNClone.github.io/Fisch/Loader",true))()
 
 elseif PlaceId == 142823291 then
 

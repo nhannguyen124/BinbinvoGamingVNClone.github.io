@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synapse X - Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.7);
+            z-index: -1;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00a2ff;
+        }
+        .content-section {
+            margin: 50px 0;
+        }
+        h2 {
+            font-size: 3em;
+            border-bottom: 2px solid #00a2ff;
+            padding-bottom: 10px;
+        }
+        .tutorial, .about-us {
+            background-color: rgba(0, 0, 0, 0.89);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+        .tutorial ol {
+            padding-left: 20px;
+        }
+        .tutorial ol li {
+            margin-bottom: 15px;
+            color: white;
+            font-size: 1.2em;
+        }
+        .about-us p {
+            line-height: 1.6;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: transparent;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        footer a {
+            color: #00a2ff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <header>
+            <div class="logo">Cloudy</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="500.html">API</a></li>
+                    <li><a href="500.html">Terms</a></li>
+                </ul>
+            </nav>
+        </header>
+
+   
+        <section class="content-section" id="tutorial">
+            <div class="tutorial">
+                <h2>How to Download Synapse X</h2>
+                <ol>
+                    <li>Go to <a href="Download.html">Go To Download Page</a></li>
+                    <li>Select a Plan</li>
+                    <li>Download the Bootstrapper</li>
+                    <li>Run The Bootstrapper (as administrator)</li>
+                    <li>Wait for the Setup to be finished</li>
+                    <p>That was it! Next time you want to launch Synapse X, Just re-run the bootstrapper. It will check for updates</p>
+                </ol>
+            </div>
+        </section>
+
+    
+        <section class="content-section" id="about">
+            <div class="about-us">
+    <h2>API DOCUMENTATION</h2>
+    <p>The CXAPI provides powerful functionality for managing DLL injection into Roblox processes. Below you will find a detailed guide on how to utilize the API effectively.</p>
+    
+    <h3>Features</h3>
+    <ul>
+        <li>Roblox Script Developing with nearly all functions available</li>
+        <li>90% UNC</li>
+    </ul>
+
+    <h3>API Usage</h3>
+    <p>To begin using the API, ensure that all necessary DLL files are downloaded. The API will automatically manage DLLs and handle injection when Roblox is detected running.</p>
+
+    <h4>Check Injection Status</h4>
+    <p>Check whether the DLL is currently injected:</p>
+    <div class="codebox-dark">
+        <pre><code>if (TNGEXPLOITTOP1.IsAttached() == true){
+    label.Text = "Injected";
+}else{
+    label.Text = "Not Inject";
+}</code></pre>
+    </div>
+
+    <h4>Execute Script</h4>
+    <p>To run a script on the injected client, use the following method:</p>
+    <div class="codebox-dark">
+        <pre><code>TNGEXPLOITTOP1.Execute(textbox.Text);</code></pre>
+    </div>
+
+    <h4>Inject</h4>
+    <p>The <code>CoreFunctions.Inject();</code> method provides an easy-to-use interface for injecting the DLL into Roblox. This method checks if Roblox is running and automatically handles the injection:</p>
+    <div class="codebox-dark">
+        <pre><code>TNGEXPLOITTOP1.Inject();</code></pre>
+    </div>
+    <p>After injection, it ensures the DLL stays loaded as long as Roblox is running. It also performs error handling in case of failed injections.</p>
+
+    <h4>Kill Roblox Process</h4>
+    <p>Terminate the Roblox process if necessary:</p>
+    <div class="codebox-dark">
+        <pre><code>TNGEXPLOITTOP1.KillRoblox();</code></pre>
+    </div>
+</div>
+
+<style>
+    .codebox-dark {
+        background-color: #2d2d2d;
+        color: #f8f8f2;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: monospace;
+        overflow-x: auto;
+    }
+    pre {
+        margin: 0;
+    }
+</style>
+
+
+        </section>
+    </div>
+
+    <footer>
+        <p>Powered by <a href="https://youtube.com/@binbinvogaming" target="_blank">BinbinvoGaming Studio</a> || &copy; 2024 BinbinvoGaming Studio Inc.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+repeat wait() until game:IsLoaded()
+
+local PlaceId = game.PlaceId
+
+if PlaceId == 1537690962 then
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/BinbinvoGaming/DeletedUserCode/main/BeeSwarmSimulator/Loader'))()
+
+    warn('Execute success')
+
+elseif PlaceId == 4490140733 then
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/BinbinvoGaming/DeletedUserCode/main/MyRestaurant/Loader'))()
+
+elseif PlaceId == 3101667897 then
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/BinbinvoGaming/DeletedUserCode/main/BuildABoatForTreasure/GoldFarm'))()
+
+elseif PlaceId == 6516141723 then
+
+    loadstring(game:HttpGet(('https://BinbinvoGaming.github.io/Doors/V1/Loader'),true))()
+
+elseif PlaceId == 6284583030 then
+
+    loadstring(game:HttpGet(('https://BinbinvoGaming.github.io/Evade'),true))()
+
+elseif PlaceId == 16732694052 then
+
+    loadstring(game:HttpGet("https://BinbinvoGamingVNClone.github.io/Fisch/V1/Loader",true))()
+
+elseif PlaceId == 142823291 then
+
+    loadstring(game:HttpGet(('https://BinbinvoGaming.github.io/MurderMystery2/Loader'),true))()
+
+elseif PlaceId == 10260193230 then
+
+    loadstring(game:HttpGet("https://binbinvogaming.github.io/MemeSea/Fixed/Loader",true))()
+
+else
+
+    game.Players.LocalPlayer:Kick('Not Support this map.')
+
+end

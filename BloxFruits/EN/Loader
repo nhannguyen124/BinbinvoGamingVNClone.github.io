@@ -2532,7 +2532,7 @@ spawn(function()
     wait(1.5)
     require(game.ReplicatedStorage.Notification).new("<Color=Red>Welcome To BinbinvoGaming Hub<Color=/>"):Display()
     wait(.5)
-    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Please use Fluxus,Wave,TNG,Codex,Delta,VEGA X,CUBIX,ARCEUS X,TRIGON,CELERY,SOLARA, for a good experience!!<Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Please use Fluxus,Wave,TNG,ARCEUS X for a good experience!!<Color=/>"):Display()
     wait(.24)
     require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Subscribe to BinbinvoGaming channel to watch the latest videos<Color=/>"):Display()
     wait(.29)
@@ -2546,7 +2546,7 @@ OrionLib:MakeNotification({
     Image = "rbxassetid://8192162908",
     Time = 5
 })
-local Window = OrionLib:MakeWindow({Name = "BinbinvoGaming Hub - Blox Fruits [EN]", HidePremium = false, IntroText = "BinbinvoGaming Hub⚜️", SaveConfig = false, ConfigFolder = "BinbinvoGamingHub"})
+local Window = OrionLib:MakeWindow({Name = "BinbinvoGaming Hub - Blox Fruits", HidePremium = false, IntroText = "BinbinvoGaming Hub⚜️", SaveConfig = false, ConfigFolder = "BinbinvoGamingHub"})
 
 
 

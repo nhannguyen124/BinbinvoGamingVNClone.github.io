@@ -6396,7 +6396,7 @@ SH:AddButton({
 C:AddButton({
     Name = "Link Discord",
     Callback = function(value)
-        setclipboard("https://discord.gg/hvKYewJNSk")
+        setclipboard("https://discord.gg/xFZHte86EH")
     end
 })
 

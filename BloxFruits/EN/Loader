@@ -2592,7 +2592,7 @@ local S = Window:MakeTab({
 })
 
 local E = Window:MakeTab({
-    Name = "LOCATION",
+    Name = "🎆Vị Trí🎆",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -2749,115 +2749,6 @@ local locallv = W:AddLabel("Level")
             end)
         end
     end)
-
-    local Section = W:AddSection({
-        Name = "Status Hack"
-    })
-    
-    local LevelFarmFarm W:AddLabel("Kaitun : not yet (coming soon)")
-    W:AddLabel("Config Save : Comming Son...")
-    local Farmfast = W:AddLabel("Farm Fast : ❌")
-    local Bypass = W:AddLabel("Bypass ❌")
-    local Section = W:AddSection({
-        Name = "World"
-    })
-    local WolrdSet3 = W:AddLabel("World 1 ❌ ")
-    local WolrdSet = W:AddLabel("Wolrd : 2 ❌")
-    local WolrdSet1 = W:AddLabel("Wolrd : 3 ❌")
-    local Section = W:AddSection({
-        Name = "Stats Point"
-    })
-    local StastMelee = W:AddLabel("")
-    local StastDefense = W:AddLabel("")
-    local StastSword = W:AddLabel("")
-    local StastGun = W:AddLabel("")
-    local StastDevilFruit = W:AddLabel("")
-    local PointsStast = W:AddLabel("")
-    local Section = W:AddSection({
-        Name = "Melee Check"
-    })
-    local  Superhuman =             W:AddLabel("❌ : Superhuman")
-    local  DeathStep =              W:AddLabel("❌ : Sharkman Karate")
-    local  ElectricClaw =             W:AddLabel("❌ : Electric Claw")
-    local  DragonTalon =             W:AddLabel("❌ : Dragon Talon")
-    local   GodHuman =            W:AddLabel("❌ : God Human")
-    local Section = W:AddSection({
-        Name = "Sword Legend Check"
-    })
-    local   Shisui =            W:AddLabel("❌ : Shisui")
-    local     Saddi =           W:AddLabel("❌ : Saddi")
-    local      Wando =         W:AddLabel("❌ : Wando")
-    local     TrueTripleKatana          W:AddLabel("❌ : True Triple Katana")
-    local Section = W:AddSection({
-        Name = "World 1 Weapon"
-    })
-    local   Saber  = W:AddLabel("❌ : Saber")
-    local Section = W:AddSection({
-        Name = "World 2 Weapon"
-    })
-    local       Rengoku =         W:AddLabel("❌ : Rengoku")
-    local    MidnightBlade =            W:AddLabel("❌ : Midnight Blade")
-    local       DragonTrident =        W:AddLabel("❌ : DragonTrident")
-    local Section = W:AddSection({
-        Name = "World 3 Weapon"
-    })
-    local     Yama =          W:AddLabel("❌ : Yama")
-    local        BuddySword =        W:AddLabel("❌ : Buddy Sword")
-    local       Canvander =        W:AddLabel("❌ : Canvander")
-    local      TwinHooks =         W:AddLabel("❌ : Twin Hooks")
-    local     SpikeyTrident =          W:AddLabel("❌ : Spikey Trident")
-    local   HallowScythe =            W:AddLabel("❌ : Hallow Scythe")
-    local     DarkDagger =           W:AddLabel("❌ : Dark Dagger")
-    local     Tushita          W:AddLabel("❌ : Tushita")
-    local Section = W:AddSection({
-        Name = "Gun"
-    })
-    local   Kabucha =            W:AddLabel("❌ : Kabucha")
-    local   AcidumRifle =             W:AddLabel("❌ : Acidum Rifle")
-    local    BizarreRifle =            W:AddLabel("❌ : Bizarre Rifle")
-    local Section = W:AddSection({
-        Name = "Quest"
-    })
-    local   BartiloQuest =            W:AddLabel("❌ : Bartilo Quest")
-    local   DonSwanQuest =             W:AddLabel("❌ : Don Swan Quest")
-    local    KillDonSwan =           W:AddLabel("❌ : Kill Don Swan")
-
-
-local Section = W:AddSection({
-    Name = "Acessory"
-})
-
-
-local Dark_Coat = W:AddLabel("❌: Dark Coat")
-local Ghoul_Mask = W:AddLabel("❌: Ghoul Mask")
-local Swan_Glass = W:AddLabel("❌: Swan Glass")
-local Pale_Scarf = W:AddLabel("❌: Pale Scarf")
-local Valkyrie_Helm = W:AddLabel("❌: Valkyrie Helm")
-
-
-spawn(function()
-    while task.wait() do
-        pcall(function()
-            for i,v in pairs(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")) do
-                if v.Name == "Saber" then
-                    Dark_Coat:Set("✅: Dark Coat")
-                end
-                if v.Name == "Ghoul Mask" then
-                    Ghoul_Mask:Set("✅: Ghoul Mask")
-                end
-                if v.Name == "Swan Glasses" then
-                    Swan_Glass:Set("✅: Swan Glass")
-                end
-                if v.Name == "Pale Scarf" then
-                    Pale_Scarf:Set("✅: Pale Scarf")
-                end
-                if v.Name == "Valkyrie Helmet" then
-                    Valkyrie_Helm:Set("✅: Valkyrie Helmet")
-                end
-            end
-        end)
-    end
-end)
 
 local Section = M:AddSection({
     Name = "Select Weapon"

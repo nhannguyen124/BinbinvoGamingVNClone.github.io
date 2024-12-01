@@ -3293,21 +3293,6 @@ spawn(function()
 end)
 
 local Section = M:AddSection({
-    Name = "Bypass Teleport"
-})
-
-M:AddToggle({
-    Name = "Bypass TP[BETA]",
-    Default = false,
-    Flag = "Bypass TP",
-    Save = true,
-    Callback = function(Value)
-        BypassTP = true 
-    end    
-})
-
-
-local Section = M:AddSection({
     Name = "Distance Mobs"
 })
 
@@ -3815,15 +3800,6 @@ elseif _G.WhiteScreen == false then
             CheckAntiCheatBypass()
         end    
     })
-    
-    ST:AddToggle({
-        Name = "auto on  v4",
-        Default = false,
-        Callback = function(Value)
-        AutoAwakeningRace = Value
-        end    
-    })
-    
 
 local Section = IQ:AddSection({
     Name = "Saber Menu"

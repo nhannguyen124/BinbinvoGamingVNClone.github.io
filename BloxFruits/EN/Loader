@@ -2609,12 +2609,6 @@ local LC = Window:MakeTab({
     PremiumOnly = false
 })
 
-local Wld = Window:MakeTab({
-    Name = "🚪 Teleport",
-    Icon = "rbxassetid://8192162908",
-    PremiumOnly = false
-})
-
 local SV = Window:MakeTab({
     Name = "📈 Information Sever",
     Icon = "rbxassetid://8192162908",
@@ -5132,7 +5126,26 @@ end
         StopTween(_G.TeleportNPC)
             end    
         })
+LC:AddButton({
+    Name = "Old World",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
+      end    
+})
 
+LC:AddButton({
+    Name = "Second World",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
+      end    
+})
+
+LC:AddButton({
+    Name = "Third World",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
+      end    
+})
         local Section = LC:AddSection({
             Name = "Teleport SeSeabeast"
         })
@@ -5268,31 +5281,6 @@ LC:AddToggle({
     Callback = function(Value)
         AimSkillNearest = Value
     end    
-})
-
-local Section = Wld:AddSection({
-    Name = "World Menu"
-})
-
-Wld:AddButton({
-    Name = "Old World",
-    Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
-      end    
-})
-
-Wld:AddButton({
-    Name = "Second World",
-    Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
-      end    
-})
-
-Wld:AddButton({
-    Name = "Third World",
-    Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
-      end    
 })
 
 local Section = SV:AddSection({

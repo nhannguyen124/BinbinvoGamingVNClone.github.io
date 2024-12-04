@@ -2926,6 +2926,16 @@ ToggleFarm = M:AddToggle({
     end    
 })
 
+M:AddToggle({
+    Name = "Bypass TP(Can Erorrs)",
+    Default = false,
+    Flag = "Bypass TP",
+    Save = true,
+    Callback = function(Value)
+        BypassTP = Value
+    end    
+})
+
 local Section = M:AddSection({
     Name = "Mastery Menu"
 })

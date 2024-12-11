@@ -317,7 +317,7 @@ do
     Menu_Setting.BackgroundTransparency = 1
     Menu_Setting.Position = UDim2.new(0, 450, 0, 7)
     Menu_Setting.Size = UDim2.new(0, 25, 0, 25)
-    Menu_Setting.Image = "http://www.roblox.com/asset/?id=80935084928352"
+    Menu_Setting.Image = "http://www.roblox.com/asset/?id=14479606771"
     
     Menu_Setting.ImageColor3 = Color3.fromRGB(255, 255, 255)
     Menu_Setting.ZIndex = 10
@@ -329,7 +329,7 @@ do
     Settings.BackgroundTransparency = 1
     Settings.Position = UDim2.new(0, 480, 0, 7)
     Settings.Size = UDim2.new(0, 25, 0, 25)
-    Settings.Image = "http://www.roblox.com/asset/?id=80935084928352"
+    Settings.Image = "http://www.roblox.com/asset/?id=14479568523"
     Settings.ImageColor3 = Color3.fromRGB(255, 255, 255)
     Settings.ZIndex = 10
     

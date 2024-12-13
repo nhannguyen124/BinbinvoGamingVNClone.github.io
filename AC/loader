@@ -13,7 +13,7 @@ pcall(
     )
 )
 local b = {print, warn, error, writefile, makefolder, rconsoleprint, setclipboard, rconsoleerr, rconsolewarn}
-local c = {"githubusercontent", "NOOB_SCRIPT20002"}
+local c = {"githubusercontent", "BinbinvoGamingHub"}
 for a, a in pairs(b) do
     local b
     b =

@@ -52,7 +52,7 @@ end)
 HomePage:Label("Join Our Discord for News")
 HomePage:Button("Copy Discord Link", function()
     AlchemyNotify("Copy Discord Link!",5)
-    setclipboard("https://discord.gg/dUdzZskBCC")
+    setclipboard("https://discord.gg/xFZHte86EH")
 end)
 -----------------------------------------------------------------------------------------------------------------------------Function
 assert(getrawmetatable)
